@@ -12,11 +12,25 @@
     "sass": "^1.57.1"
   },
   "scripts": {
-    "test":"echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "css:watch": "sass --watch sass/main.scss:css/man.css",
     "css:compile": "sass sass/main.scss:css/main.css",
     "css:prefix": "postcss --use autoprefixer -b \"last 4 versions\" css/main.css -0 css/main",
     "css:compress": "css.minify -f css/main.css -o css",
     "css:build": "npm-run-all css:compile css.prefix css:compress"
-  }
+  },
+  "name": "uin-bootstrap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amanig3/UIN-bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amanig3/UIN-bootstrap/issues"
+  },
+  "homepage": "https://github.com/amanig3/UIN-bootstrap#readme",
+  "description": ""
 }
